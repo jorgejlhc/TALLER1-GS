@@ -31,18 +31,4 @@ public class Texto {
     }
     
     
-    public int NumeroDeEspacios() {
-        int numerodeespacios = texto.split(" ").length-1;
-        return numerodeespacios;
-    }
-    
-    public int NumeroDeCaracteresSinEspacios() {
-        int caracteressinespacio = NumeroDeCaracteresConEspacios()-NumeroDeEspacios();
-        return caracteressinespacio;
-    }
-    
-    public int NumeroDePalabras() {
-        int numerodeespacios = texto.split(" ").length;
-        return numerodeespacios;
-    }
 }
