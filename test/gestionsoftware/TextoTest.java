@@ -52,7 +52,7 @@ public class TextoTest {
         // TODO review the generated test code and remove the default call to fail.
         if(result != expResult) {
             fail("The test case is a prototype.");
-        }else {
+        }else { 
             System.out.println("Prueba acertada");
         }
     }
