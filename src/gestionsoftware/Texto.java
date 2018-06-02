@@ -30,5 +30,10 @@ public class Texto {
         return caracteresconespacio;
     }
     
+    public int NumeroDeEspacios() {
+        int numerodeespacios = texto.split(" ").length-1;
+        return numerodeespacios;
+    }
+    
     
 }
