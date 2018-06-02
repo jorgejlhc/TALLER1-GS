@@ -40,5 +40,9 @@ public class Texto {
         return caracteressinespacio;
     }
     
-    
+        
+    public int NumeroDePalabras() {
+        int numerodeespacios = texto.split(" ").length;
+        return numerodeespacios;
+    }
 }
