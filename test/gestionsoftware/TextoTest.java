@@ -97,4 +97,23 @@ public class TextoTest {
     }
 
 
+    /**
+     * Test of NumeroDePalabras method, of class Texto.
+     */
+    @Test
+    public void testNumeroDePalabras() {
+        System.out.println("NumeroDePalabras");
+        Texto instance = new Texto();
+        instance.setTexto("hola mundo");
+        int expResult = 2;
+        int result = instance.NumeroDePalabras();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        if(result != expResult) {
+            fail("The test case is a prototype.");
+        }else {
+            System.out.println("Prueba acertada");
+        }
+    }
+    
 }
