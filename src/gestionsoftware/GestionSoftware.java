@@ -35,7 +35,7 @@ public class GestionSoftware {
                     System.out.println("La cadena de texto es: " + texto);
                     gs.setTexto(texto);
                     System.out.println("El numero de caracteres en la cadena, incluyendo los espacios es de : " + gs.NumeroDeCaracteresConEspacios());
-                    
+                     
                     System.out.println("\n");
                 } catch (InputMismatchException exe){
                   System.out.println("Caracter no valido");
