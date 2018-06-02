@@ -19,34 +19,10 @@ public class GestionSoftware {
      */
     
     
-    private int ContarPalabras(String texto) {
-        int palabas = texto.split(" ").length;
-        return palabas;
-    }
     
-    private int NumeroDeCaracteresConEspacios(String texto) {
-        int caracteresconespacio = texto.length();
-        return caracteresconespacio;
-    }
-    
-    
-    private int NumeroDeEspacios(String texto) {
-        int numerodeespacios = texto.split(" ").length-1;
-        return numerodeespacios;
-    }
-    
-    private int NumeroDeCaracteresSinEspacios(String texto) {
-        int caracteressinespacio = NumeroDeCaracteresConEspacios(texto)-NumeroDeEspacios(texto);
-        return caracteressinespacio;
-    }
-    
-    private int NumeroDePalabras(String texto) {
-        int numerodeespacios = texto.split(" ").length;
-        return numerodeespacios;
-    }
     
     public static void main(String args[]){
-        GestionSoftware gs = new GestionSoftware();
+        Texto gs = new Texto();
         Scanner reader = new Scanner(System.in);
         String texto = "";   
         do {			
@@ -59,11 +35,11 @@ public class GestionSoftware {
                         continue;
                     }
                     System.out.println("La cadena de texto es: " + texto);
-                    
-                    System.out.println("El numero de caracteres en la cadena, incluyendo los espacios es de : " + gs.NumeroDeCaracteresConEspacios(texto));
-                    System.out.println("El numero de caracteres en la cadena, sin incluir los espacios es de : " + gs.NumeroDeCaracteresSinEspacios(texto));
-                    System.out.println("El numero de espacios en la cadena es de : " + gs.NumeroDeEspacios(texto));
-                    System.out.println("El numero de palabras en la cadena es de : " + gs.NumeroDePalabras(texto));
+                    gs.setTexto(texto);
+                    System.out.println("El numero de caracteres en la cadena, incluyendo los espacios es de : " + gs.NumeroDeCaracteresConEspacios());
+                    System.out.println("El numero de caracteres en la cadena, sin incluir los espacios es de : " + gs.NumeroDeCaracteresSinEspacios());
+                    System.out.println("El numero de espacios en la cadena es de : " + gs.NumeroDeEspacios());
+                    System.out.println("El numero de palabras en la cadena es de : " + gs.NumeroDePalabras());
                     System.out.println("\n");
                 } catch (InputMismatchException exe){
                   System.out.println("Caracter no valido");
