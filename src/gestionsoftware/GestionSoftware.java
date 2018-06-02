@@ -11,40 +11,75 @@ import java.util.Scanner;
 /**
  *
  * @author jorgejlhc
+ * @version 1.0
+ * @since 02/06/2018
  */
 public class GestionSoftware {
-//Prueba cambio
+    
+    
     /**
-     * @param args the command line arguments
+     * 
+     * Este metodo recibe un String y retorna el numero de 
+     * palabras separadas por un espacio (" ").
+     * @param texto es el parametro del metodo ContarPalabras
+     * @return int retorna la cantidad de palabras
      */
-    
-    
     private int ContarPalabras(String texto) {
         int palabas = texto.split(" ").length;
         return palabas;
     }
     
+    /**
+     * 
+     * Este metodo cuenta los espacios. 
+     * recibe un String y retorna el numero de
+     * caracteres del String.
+     * @param texto es el parametro del metodo NumeroDeCaracteresConEspacios
+     * @return int retorna la cantidad de caracteres de un String
+     */
     private int NumeroDeCaracteresConEspacios(String texto) {
         int caracteresconespacio = texto.length();
         return caracteresconespacio;
     }
     
-    
+    /**
+     * 
+     * Este metodo recibe un String y retorna el numero de
+     * espacios del String.
+     * @param texto es el parametro del metodo NumeroDeEspacios
+     * @return int retorna la cantidad de espacios.
+     */
     private int NumeroDeEspacios(String texto) {
         int numerodeespacios = texto.split(" ").length-1;
         return numerodeespacios;
     }
-    
+    /**
+     * Este metodo recibe un String y retorna el numero de
+     * caracteres sin espacio.
+     * @param texto es el parametro del metodo NumeroDeCaracteresSinEspacios
+     * @return int retorna la cantidad de caracteres sin espacios.
+     */
     private int NumeroDeCaracteresSinEspacios(String texto) {
         int caracteressinespacio = NumeroDeCaracteresConEspacios(texto)-NumeroDeEspacios(texto);
         return caracteressinespacio;
     }
-    
+    /**
+     * 
+     * @param texto
+     * @return 
+     */
     private int NumeroDePalabras(String texto) {
         int numerodeespacios = texto.split(" ").length;
         return numerodeespacios;
     }
     
+    /**
+   * This is the main method which makes use of addNum method.
+   * @param args Unused.
+   * @return Nothing.
+   * @exception IOException On input error.
+   * @see IOException
+   */
     public static void main(String args[]){
         GestionSoftware gs = new GestionSoftware();
         Scanner reader = new Scanner(System.in);
