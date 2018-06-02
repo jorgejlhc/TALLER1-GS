@@ -35,5 +35,10 @@ public class Texto {
         return numerodeespacios;
     }
     
+    public int NumeroDeCaracteresSinEspacios() {
+        int caracteressinespacio = NumeroDeCaracteresConEspacios()-NumeroDeEspacios();
+        return caracteressinespacio;
+    }
+    
     
 }

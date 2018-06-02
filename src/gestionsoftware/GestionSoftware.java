@@ -36,6 +36,7 @@ public class GestionSoftware {
                     gs.setTexto(texto);
                     System.out.println("El numero de caracteres en la cadena, incluyendo los espacios es de : " + gs.NumeroDeCaracteresConEspacios());
                     System.out.println("El numero de espacios en la cadena es de : " + gs.NumeroDeEspacios());
+                    System.out.println("El numero de caracteres en la cadena, sin incluir los espacios es de : " + gs.NumeroDeCaracteresSinEspacios());
                     
                     System.out.println("\n");
                 } catch (InputMismatchException exe){
